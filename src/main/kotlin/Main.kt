@@ -2,11 +2,7 @@ import kotlin.random.Random
 
 fun main(args: Array<String>) {
 
-    val list = listOf(1, 2, 3, 4, 5)
-
-    val newList = list.map { it + it }
-
-    newList.forEach{println(it)}
+    val userInputN = userInputN()
 
 }
 
@@ -16,3 +12,13 @@ fun printArray(item: List<Any>) {
     }
 
 }
+
+fun userInputN(): Int {
+    var n = 0
+    while (true) {
+        println("Enter number N above zero: ")
+        n = readLine()?.toIntOrNull() ?: -1
+        if (n > 0) break
+        }
+    return n
+    }
