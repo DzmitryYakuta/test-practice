@@ -3,6 +3,10 @@ import kotlin.random.Random
 fun main(args: Array<String>) {
 
     val userInputN = userInputN()
+    var telefonList = MutableList()
+    for (i in 1..userInputN) {
+    
+    }
 
 }
 
